@@ -160,7 +160,7 @@ $(document).ready(function () {
     });
 
     /********************** Add to Calendar **********************/
-    var myCalendar = createCalendar({
+    var dinnerCalendar = createCalendar({
         options: {
             class: '',
             // You can pass an ID. If you don't, one will be generated for you
@@ -168,7 +168,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Jia Huei and Yi Xuan's Wedding",
+            title: "Jia Huei and Yi Xuan's Wedding Dinner",
 
             // Event start date
             start: new Date('Oct 28, 2023 19:00'),
@@ -181,14 +181,46 @@ $(document).ready(function () {
             end: new Date('Oct 28, 2023 22:00'),
 
             // Event Address
-            address: 'Oceanville Ipoh',
+            address: 'Oceanville Ipoh, Kinta Riverfront Hotel & Suites, Jalan Lim Bo Seng, 30000 Ipoh, Perak, Malaysia.',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Jia Huei at +6019-6555015."
-        }
+            description: "Wedding Dinner. For any queries, please contact Jia Huei at +6019-6555015 or Yi Xuan at +60165165266."
+        },
+        buttonLabel: 'Add Wedding Dinner to Calendar'
+    });
+    var ceremonyCalendar = createCalendar({
+        options: {
+            class: '',
+            // You can pass an ID. If you don't, one will be generated for you
+            id: ''
+        },
+        data: {
+            // Event title
+            title: "Jia Huei and Yi Xuan's 接新娘 Ceremony",
+
+            // Event start date
+            start: new Date('Nov 04, 2023 08:00'),
+
+            // Event duration (IN MINUTES)
+            // duration: 120,
+
+            // You can also choose to set an end time
+            // If an end time is set, this will take precedence over duration
+            end: new Date('Nov 04, 2023 13:00'),
+
+            // Event Address
+            address: '13, Jalan Kasturi 3, Kasturi Heights, 71800 Nilai, Negeri Sembilan, Malaysia.',
+
+            // Event Description
+            description: "接新娘 Ceremony. Lunch starts at 11am. For any queries, please contact Jia Huei at +6019-6555015 or Yi Xuan at +60165165266."
+        },
+        buttonLabel: 'Add 接新娘 Ceremony to Calendar'
     });
 
-    $('#add-to-cal').html(myCalendar);
+    $('#add-to-cal').append(dinnerCalendar);
+    $('#add-to-cal').append(ceremonyCalendar);
+    // $('#add-to-cal-0').innerHTML = $('#add-to-cal-0').innerHTML.replace("Add to Calendar", "Add Wedding Dinnere to Calendar");
+    // $('#add-to-cal-1').html(dinnerCalendar);
 
 
     /********************** RSVP **********************/
