@@ -9,9 +9,23 @@
 @import "partials/colors";
 @import "partials/layout";
 
+@font-face {
+	font-family: 'BrittanySignature';
+	src: url('fonts/BrittanySignature.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* ==========================================================================
 Global Styles
 ========================================================================== */
+
+p {
+  color: rgba(28,54,83,.9);
+  font-weight: 400;
+}
+
+
 .group:after {
   content: "";
   display: table;
@@ -251,8 +265,8 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  min-height: 850px;
+  background: url('../img/pre-wed-self/lg/CR7_0222-PS.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -282,7 +296,7 @@ Hero
   }
   .hero-content img {
     width: 55%;
-    margin-bottom: 12%;
+    margin-bottom: 5%;
   }
 }
 .navigation {
@@ -318,7 +332,7 @@ header {
     display: inline-block;
   }
   .logo img {
-    height: 19px;
+    height: 75px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -656,7 +670,7 @@ Instagram
 /* ==========================================================================
 Engagement Pics
 ========================================================================== */
-#eng-pics {
+#our-pics {
   img {
     width: 100%;
     height: auto;
